@@ -29,7 +29,7 @@ module.exports = class MdsMdSetting
     height: MdsMdSetting.generalTransfomer.unit
     theme: (v) ->
       basename = path.basename(v)
-      return if basename in ['default', 'gaia', 'haskell', 'olive', 'colors', 'colors-hannari', 'colors-kokoro', 'colors-mplus1p', 'colors-nicomoji', 'colors-nikukyu'] then "css/themes/#{basename}.css" else null
+      return if basename in ['default', 'gaia', 'haskell', 'olive', 'colors', 'colors-hannari', 'colors-kokoro', 'colors-mplus1p', 'colors-roundedmplus1c', 'colors-nicomoji', 'colors-nikukyu'] then "css/themes/#{basename}.css" else null
     template: (v) -> v
     footer: (v) -> v
     prerender: MdsMdSetting.generalTransfomer.bool
