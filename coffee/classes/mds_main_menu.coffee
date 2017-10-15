@@ -266,6 +266,27 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'gaia'
               click: => @window.mdsWindow.send 'setTheme', 'gaia' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Colors'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors'
+              click: => @window.mdsWindow.send 'setTheme', 'colors' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Olive'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'olive'
+              click: => @window.mdsWindow.send 'setTheme', 'olive' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Haskell'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'haskell'
+              click: => @window.mdsWindow.send 'setTheme', 'haskell' unless @window.mdsWindow.freeze
+            }
           ]
 
           encodings: do =>
