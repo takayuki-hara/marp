@@ -315,6 +315,13 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'colors-nicomoji'
               click: => @window.mdsWindow.send 'setTheme', 'colors-nicomoji' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Colors-Nikukyu'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-nikukyu'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-nikukyu' unless @window.mdsWindow.freeze
+            }
           ]
 
           encodings: do =>
