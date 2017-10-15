@@ -267,11 +267,11 @@ module.exports = class MdsMainMenu
               click: => @window.mdsWindow.send 'setTheme', 'gaia' unless @window.mdsWindow.freeze
             }
             {
-              label: '&Colors'
+              label: '&Haskell'
               enabled: @window?
               type: if @window? then 'radio' else 'normal'
-              checked: @states.theme == 'colors'
-              click: => @window.mdsWindow.send 'setTheme', 'colors' unless @window.mdsWindow.freeze
+              checked: @states.theme == 'haskell'
+              click: => @window.mdsWindow.send 'setTheme', 'haskell' unless @window.mdsWindow.freeze
             }
             {
               label: '&Olive'
@@ -281,11 +281,11 @@ module.exports = class MdsMainMenu
               click: => @window.mdsWindow.send 'setTheme', 'olive' unless @window.mdsWindow.freeze
             }
             {
-              label: '&Haskell'
+              label: '&Colors'
               enabled: @window?
               type: if @window? then 'radio' else 'normal'
-              checked: @states.theme == 'haskell'
-              click: => @window.mdsWindow.send 'setTheme', 'haskell' unless @window.mdsWindow.freeze
+              checked: @states.theme == 'colors'
+              click: => @window.mdsWindow.send 'setTheme', 'colors' unless @window.mdsWindow.freeze
             }
           ]
 
