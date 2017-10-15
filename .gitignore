@@ -50,3 +50,7 @@ docs/Gemfile.lock
 docs/.sass-cache/
 docs/_site/
 docs/_drafts/
+
+# darwin
+Marp2-darwin-x64
+

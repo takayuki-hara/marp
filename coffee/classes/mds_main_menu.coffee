@@ -266,6 +266,69 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'gaia'
               click: => @window.mdsWindow.send 'setTheme', 'gaia' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Haskell'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'haskell'
+              click: => @window.mdsWindow.send 'setTheme', 'haskell' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Olive'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'olive'
+              click: => @window.mdsWindow.send 'setTheme', 'olive' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors'
+              click: => @window.mdsWindow.send 'setTheme', 'colors' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-Hannari'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-hannari'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-hannari' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-Kokoro'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-kokoro'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-kokoro' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-Mplus1p'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-mplus1p'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-mplus1p' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-RoundedMplus1c'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-roundedmplus1c'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-roundedmplus1c' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-Nicomoji'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-nicomoji'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-nicomoji' unless @window.mdsWindow.freeze
+            }
+            {
+              label: '&Colors-Nikukyu'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-nikukyu'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-nikukyu' unless @window.mdsWindow.freeze
+            }
           ]
 
           encodings: do =>
