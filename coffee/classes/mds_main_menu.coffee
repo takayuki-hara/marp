@@ -294,6 +294,13 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'colors-hannari'
               click: => @window.mdsWindow.send 'setTheme', 'colors-hannari' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Colors-Kokoro'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-kokoro'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-kokoro' unless @window.mdsWindow.freeze
+            }
           ]
 
           encodings: do =>
