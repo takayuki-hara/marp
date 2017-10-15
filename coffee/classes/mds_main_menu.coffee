@@ -308,6 +308,13 @@ module.exports = class MdsMainMenu
               checked: @states.theme == 'colors-mplus1p'
               click: => @window.mdsWindow.send 'setTheme', 'colors-mplus1p' unless @window.mdsWindow.freeze
             }
+            {
+              label: '&Colors-Nicomoji'
+              enabled: @window?
+              type: if @window? then 'radio' else 'normal'
+              checked: @states.theme == 'colors-nicomoji'
+              click: => @window.mdsWindow.send 'setTheme', 'colors-nicomoji' unless @window.mdsWindow.freeze
+            }
           ]
 
           encodings: do =>
